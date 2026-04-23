@@ -5,7 +5,7 @@ import pandas as pd
 from PIL import Image
 
 ## loading the kmeans model
-model = load_model('../../output/Final_kmeans_model')
+model = load_model('Final_kmeans_model')
 
 ## defining a function to make predictions
 def predict(model, input_df):
@@ -17,7 +17,7 @@ def predict(model, input_df):
 def run():
 
     ## loading an image
-    image = Image.open('../../input/customer_segmentation.png')
+    image = Image.open('customer_segmentation.png')
 
     ## adding the image to the webapp
     st.image(image,use_column_width=True)

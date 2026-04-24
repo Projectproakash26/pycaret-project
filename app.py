@@ -20,7 +20,7 @@ def run():
     image = Image.open('customer_segmentation.png')
 
     ## adding the image to the webapp
-    st.image(image,use_column_width=True)
+    st.image(image, use_container_width=True)
 
     ## adding a selectbox making a choice between two broadways to predict new data points
     add_selectbox = st.sidebar.selectbox(
